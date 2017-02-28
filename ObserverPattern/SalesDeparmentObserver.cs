@@ -8,7 +8,7 @@ namespace ObserverPattern
 {
     public class SalesDeparmentObserver : AbstractObserver
     {
-        public SalesDeparmentObserver(Subject subj)
+        public SalesDeparmentObserver(EmployeeSubject subj)
         {
             this.DataSource = subj;
             subj.Subscribe(this);

@@ -2,8 +2,8 @@
 {
     public interface Subject
     {
-        void Subscribe(Observer observer);
-        void UnSubscribe(Observer observer);
+        void Subscribe(IObserver observer);
+        void UnSubscribe(IObserver observer);
         void Notify();
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace ObserverPattern
 {
-    public abstract class AbstractObserver : Observer
+    public abstract class AbstractObserver : IObserver
     {
         public abstract void Update();
     }

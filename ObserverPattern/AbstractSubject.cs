@@ -5,19 +5,19 @@ namespace ObserverPattern
 {
     public abstract class AbstractSubject : Subject
     {
-        private readonly List<Observer> _observers;
+        private readonly List<IObserver> _observers;
 
         public AbstractSubject()
         {
-            this._observers = new List<Observer>();
+            this._observers = new List<IObserver>();
         }
 
-        public void Subscribe(Observer observer)
+        public void Subscribe(IObserver observer)
         {
             _observers.Add(observer);
         }
 
-        public void UnSubscribe(Observer observer)
+        public void UnSubscribe(IObserver observer)
         {
             _observers.Remove(observer);
         }
